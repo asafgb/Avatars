@@ -5,9 +5,11 @@
   "dependencies": {
     "@material-ui/icons": "^1.0.0-beta.43",
     "jss-rtl": "^0.2.3",
+    "material-design-icons": "^3.0.1",
     "material-ui": "^1.0.0-beta.47",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-font-icon": "^1.0.0",
     "react-height": "^3.0.0",
     "react-load-image": "^0.1.6",
     "react-scripts": "1.1.4"
