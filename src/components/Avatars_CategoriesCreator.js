@@ -7,8 +7,8 @@ import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 
 
 const styles = {
-         picStyle: {
-            paddingRight:10
+          itemStyle: {
+              paddingRight : 10,
 
            },
            Pic:{
@@ -31,7 +31,7 @@ const styles = {
     const { classes} = props;
     const listItems = props.data.map((row) =>
     <div key={row.key} className={classes.picStyle}>
-    <ListItem button disableGutters={true} >
+    <ListItem className={classes.itemStyle} button disableGutters={true} >
       <ListItemIcon>
       <img className={classes.Pic}  src={process.env.PUBLIC_URL + row.path} alt="logo" />
       </ListItemIcon>
@@ -51,6 +51,3 @@ const styles = {
   };
   
   export default withStyles(styles)(CategoriesGenerator);
-
-
-
