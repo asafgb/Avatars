@@ -1,0 +1,21 @@
+[
+
+    {
+        "key":1,
+        "name":"חתולים",
+        "path":"/images/Cat.jpg"
+    },
+
+    {
+        "key":2,
+        "name":"כלבים",
+        "path":"/images/Dog.jpg"
+    },
+
+    {
+        "key":3,
+        "name":"אנשים",
+        "path":"/images/People1.png"
+    }
+
+]
