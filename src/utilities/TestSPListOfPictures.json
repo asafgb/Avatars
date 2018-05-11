@@ -1,0 +1,56 @@
+[
+
+    {
+        "category":"Cats",
+        "path":"http://www.infovet.co.il/image/users/188878/ftp/my_files/untitled-1.png"
+    },
+
+    {
+        "category":"Cats",
+        "path":"https://www.pitria.com/wp-content/uploads/2016/11/%D7%97%D7%AA%D7%95%D7%9C.jpg"
+    },
+
+    {
+        "category":"Cats",
+        "path":"https://www.doctorvet.co.il/wp-content/uploads/2017/01/kitten-treetment-main.jpg"
+    },
+
+    {
+        "category":"Dogs",
+        "path":"https://petplanet.co.il/image/cache/catalog/iStock_000016265624XSmall-200x200.jpg"
+    },
+
+    {
+        "category":"Dogs",
+        "path":"http://f.nanafiles.co.il/upload/mediastock/img/1789/0/275/275273.jpg"
+    },
+
+    {
+        "category":"Dogs",
+        "path":"https://www.isradog.co.il/wp-content/uploads/pup10.jpg"
+    },
+
+    {
+        "category":"People",
+        "path":"https://avatarfiles.alphacoders.com/643/thumb-64385.png"
+    },
+
+    {
+        "category":"People",
+        "path":"http://www.lte-esafety.co.uk/wp-content/uploads/2015/06/avatar.png"
+    },
+
+    {
+        "category":"People",
+        "path":"https://cf.ltkcdn.net/socialnetworking/images/std/168795-400x400-Female-Avatar-2-lg.jpg"
+    },
+    {
+        "category":"People",
+        "path":"https://avatarfiles.alphacoders.com/855/85557.png"
+    },
+    {
+        "category":"People",
+        "path":"/images/Categories/toDelete.jpg"
+    }
+    
+]

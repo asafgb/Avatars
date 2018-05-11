@@ -37,7 +37,7 @@ const styles = {
       <ListItemIcon>
       <img className={classes.Pic}  src={process.env.PUBLIC_URL + row.path} alt="logo" />
       </ListItemIcon>
-      <ListItemText primary={row.name} />
+      <ListItemText primary={row.category} />
     </ListItem>
   </div>
 

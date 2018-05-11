@@ -15,11 +15,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ImageAvatars from '../components/Avatars_TopNavUserPic';
 import {ReactHeight} from 'react-height';
 import { mailFolderListItems, otherMailFolderListItems } from './ListCreator';
-
-import CategoriesGenerator from '../components/Avatars_CategoriesCreator.js';
+//import CategoriesGenerator from '../components/Avatars_CategoriesCreator.js';
 import data from '../utilities/Categories.json';
 import CategoriesGenerator2 from '../components/Avatars_CategoriesCreator2'
-
+import testsplist from '../utilities/TestSPListOfPictures.json'
+import TitlebarGridList from './Avatars_GridList'
 
 const drawerWidth = 240;
 const clientheight = this.height;
@@ -46,7 +46,7 @@ const styles = theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
   },
-  appBarShift: {
+  appBarShift: {    
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(['width', 'margin'], {
@@ -62,6 +62,7 @@ const styles = theme => ({
     display: 'none',
   },
   drawerPaper: {
+
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
@@ -69,6 +70,7 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    
   },
   drawerPaperClose: {
     overflowX: 'hidden',
@@ -88,15 +90,23 @@ const styles = theme => ({
     padding: '0 8px',
     ...theme.mixins.toolbar,
   },
+  toolbars: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '0 8px',
+    minHeight:'80px',
+
+  },
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing.unit * 3,
+    padding: theme.spacing.unit * 4,
   },
-  divider: {
-    paddingTop:16,
-  },
+  pictureGrid:
+{
 
+},
 
 });
 
@@ -127,7 +137,7 @@ class MiniDrawer extends React.Component {
           className={classNames(classes.appBar, this.state.open && classes.appBarShift)}
         >
        
-          <Toolbar disableGutters={true}  > 
+          <Toolbar  disableGutters={true}  > 
 {//disableGutters={!this.state.open}
 }
           
@@ -157,21 +167,26 @@ class MiniDrawer extends React.Component {
           }}
           open={this.state.open}
         >
-          <div className={classes.toolbar}>
+          <div className={classes.toolbars}>
             <IconButton onClick={this.handleDrawerClose}>
               {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </IconButton>
           </div>
-          <Divider className = {classes.divider} />
+          <Divider  />
            {/* <List>{mailFolderListItems}</List> */}
            <CategoriesGenerator2 data={data}/>
           <Divider  />
-          {/* {<CategoriesGenerator2 data={data}/>} */}
+          {/* { <CategoriesGenerator2 data={data}/>}  */}
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
           {/* <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography> */}
           {/* <CategoriesGenerator data={data}/> */}
+          {/* {testsplist.map((row) =>
+          <img className={} src={row.path} alt={row.category} />
+          )
+          } */}
+          <TitlebarGridList/>
         </main>
       </div>
     );

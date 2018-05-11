@@ -2,20 +2,28 @@
 
     {
         "key":1,
-        "name":"חתולים",
-        "path":"/images/Cat.jpg"
+        "category":"Cats",
+        "path":"/images/Categories/Cat.jpg"
     },
 
     {
         "key":2,
-        "name":"כלבים",
-        "path":"/images/Dog.jpg"
+        "category":"Dogs",
+        "path":"/images/Categories/Dog.jpg"
     },
 
     {
         "key":3,
-        "name":"אנשים",
-        "path":"/images/People1.png"
+        "category":"People",
+        "path":"/images/Categories/People.png"
+        
+    },
+    
+    {
+        "key":4,
+        "category":"All",
+        "path":"/images/Categories/People1.png"
+        
     }
 
 ]
