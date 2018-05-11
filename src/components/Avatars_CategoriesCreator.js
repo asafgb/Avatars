@@ -8,7 +8,7 @@ import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 
 const styles = {
           itemStyle: {
-              paddingRight : 10,
+              paddingRight : 11,
 
            },
            Pic:{
