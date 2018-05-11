@@ -18,6 +18,7 @@ import { mailFolderListItems, otherMailFolderListItems } from './ListCreator';
 
 import CategoriesGenerator from '../components/Avatars_CategoriesCreator.js';
 import data from '../utilities/Categories.json';
+import CategoriesGenerator2 from '../components/Avatars_CategoriesCreator2'
 
 
 const drawerWidth = 240;
@@ -163,9 +164,9 @@ class MiniDrawer extends React.Component {
           </div>
           <Divider className = {classes.divider} />
            {/* <List>{mailFolderListItems}</List> */}
-           <CategoriesGenerator data={data}/>
-          <Divider />
-          {/* <List>{otherMailFolderListItems}</List>    */}
+           <CategoriesGenerator2 data={data}/>
+          <Divider  />
+          {/* {<CategoriesGenerator2 data={data}/>} */}
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />

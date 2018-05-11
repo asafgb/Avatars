@@ -25,6 +25,8 @@ const styles = {
 
   };
 
+ 
+
 
   function CategoriesGenerator(props) {
 
