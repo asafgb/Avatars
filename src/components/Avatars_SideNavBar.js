@@ -17,9 +17,10 @@ import {ReactHeight} from 'react-height';
 import { mailFolderListItems, otherMailFolderListItems } from './ListCreator';
 //import CategoriesGenerator from '../components/Avatars_CategoriesCreator.js';
 import data from '../utilities/Categories.json';
-import CategoriesGenerator2 from '../components/Avatars_CategoriesCreator2'
+import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
 import testsplist from '../utilities/TestSPListOfPictures.json'
 import TitlebarGridList from './Avatars_GridList'
+import CreateNamePicture from '../utilities/CreateNamePicture';
 
 const drawerWidth = 240;
 const clientheight = this.height;
@@ -174,7 +175,8 @@ class MiniDrawer extends React.Component {
           </div>
           <Divider  />
            {/* <List>{mailFolderListItems}</List> */}
-           <CategoriesGenerator2 data={data}/>
+           <CategoriesGenerator data={data}/>
+           
           <Divider  />
           {/* { <CategoriesGenerator2 data={data}/>}  */}
         </Drawer>
@@ -182,11 +184,9 @@ class MiniDrawer extends React.Component {
           <div className={classes.toolbar} />
           {/* <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography> */}
           {/* <CategoriesGenerator data={data}/> */}
-          {/* {testsplist.map((row) =>
-          <img className={} src={row.path} alt={row.category} />
-          )
-          } */}
-          <TitlebarGridList/>
+
+          {/* <TitlebarGridList/> */}
+          <CreateNamePicture UserName="אסף שזר"  />
         </main>
       </div>
     );

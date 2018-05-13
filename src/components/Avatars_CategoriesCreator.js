@@ -28,9 +28,9 @@ const styles = {
 };
 
 
-class CategoriesCreator2 extends React.Component {
+class CategoriesCreator extends React.Component {
   state = {
-    anchorEl: null,s
+    anchorEl: null,
   };
 
   // handleClick = event => {
@@ -113,12 +113,12 @@ class CategoriesCreator2 extends React.Component {
 
 }
 
-CategoriesCreator2.propTypes = {
+CategoriesCreator.propTypes = {
   classes: PropTypes.object.isRequired,
   //theme: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles, { withTheme: false })(CategoriesCreator2);
+export default withStyles(styles, { withTheme: false })(CategoriesCreator);
 
 
 
