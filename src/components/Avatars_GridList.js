@@ -46,7 +46,7 @@ const styles = theme => ({
  */
 function TitlebarGridList(props) {
   const { classes } = props;
-  const AmountPictureColor=20;
+  const AmountPictureColor=1;
   var i=0;
   return (
     <div className={classes.root} id="AllImages">
