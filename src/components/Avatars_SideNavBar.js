@@ -20,7 +20,7 @@ import data from '../utilities/Categories.json';
 import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
 import testsplist from '../utilities/TestSPListOfPictures.json'
 import TitlebarGridList from './Avatars_GridList'
-import CreateNamePicture from '../utilities/CreateNamePicture';
+//import CreateNamePicture from './CreateNamePicture';
 
 const drawerWidth = 240;
 const clientheight = this.height;
@@ -156,6 +156,7 @@ class MiniDrawer extends React.Component {
             <Typography variant="title" color="inherit" className={classes.flex}>
             {title}
           </Typography>
+
           <ImageAvatars  name="asaf"  picUrl="https://thumbs.dreamstime.com/z/cartoon-man-icon-person-design-vector-graphic-concept-represented-isolated-flat-illustration-73697341.jpg"/>
             
           </Toolbar>
@@ -174,19 +175,21 @@ class MiniDrawer extends React.Component {
             </IconButton>
           </div>
           <Divider  />
-           {/* <List>{mailFolderListItems}</List> */}
-           <CategoriesGenerator data={data} />
+            {
+              // Category Generetor from json
+              <CategoriesGenerator data={data} />
+            }
            
           <Divider  />
-          {/* { <CategoriesGenerator2 data={data}/>}  */}
+
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          {/* <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography> */}
-          {/* <CategoriesGenerator data={data}/> */}
-
-          { <TitlebarGridList piccolor={5}/> }
-          {/* { <CreateNamePicture uname="א.ש" index={1}  />} */}
+          {
+            // Picture + name picture list
+            <TitlebarGridList piccolor={5}/> 
+          }
+      
         </main>
       </div>
     );

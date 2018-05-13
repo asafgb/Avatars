@@ -7,7 +7,7 @@ import IconButton from 'material-ui/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 //import tileData from './tileData';
 import testsplist from '../utilities/TestSPListOfPictures.json'
-import CreateNamePicture from '../utilities/CreateNamePicture';
+import CreateNamePicture from './Avatars_CreateNamePicture';
 
 
 const styles = theme => ({
