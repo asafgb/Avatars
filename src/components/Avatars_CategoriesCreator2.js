@@ -30,7 +30,7 @@ const styles = {
 
 class CategoriesCreator2 extends React.Component {
   state = {
-    anchorEl: null,
+    anchorEl: null,s
   };
 
   // handleClick = event => {
