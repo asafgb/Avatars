@@ -175,7 +175,7 @@ class MiniDrawer extends React.Component {
           </div>
           <Divider  />
            {/* <List>{mailFolderListItems}</List> */}
-           <CategoriesGenerator data={data}/>
+           <CategoriesGenerator data={data} />
            
           <Divider  />
           {/* { <CategoriesGenerator2 data={data}/>}  */}
@@ -185,8 +185,8 @@ class MiniDrawer extends React.Component {
           {/* <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography> */}
           {/* <CategoriesGenerator data={data}/> */}
 
-          {/* <TitlebarGridList/> */}
-          <CreateNamePicture UserName="אסף שזר"  />
+          { <TitlebarGridList piccolor={5}/> }
+          {/* { <CreateNamePicture uname="א.ש" index={1}  />} */}
         </main>
       </div>
     );

@@ -7,26 +7,7 @@ import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 
 
 const styles = {
-  itemStyle: {
-      paddingRight : 10,
 
-   },
-   Pic:{
-    borderWidth:1,
-    borderColor:'rgba(0,0,0,0.2)',
-    alignItems:'center',
-    justifyContent:'center',
-    width:50,
-    height:50,
-    backgroundColor:'#fff',
-    borderRadius:50,
-  },
-  canvas:{
-    border:'1px',
-    solid: '#d3d3d3',
-    direction:'ltr',
-    textalign:'ltr'
-  }
 };
 
 
@@ -35,7 +16,7 @@ const styles = {
 class CreateNamePicture extends React.Component {
 
 
-  CreateCanvas(index) {
+  CreateCanvas(index,name) {
     const { classes, theme, title } = this.props;
     function LoadCanvas() {
       var colorArray = ["#cc66ff","#00ff00","#0000ff","#006600","#ff3300","#663300","#ff8c1a"];//"red", "#0000cc","#00ffcc"
@@ -71,6 +52,9 @@ class CreateNamePicture extends React.Component {
       var higharc= 170;
       var toMiddle =20
       var radius=90
+
+      /*
+      Other Half
       // ctx.fillStyle = colorArray[FirstColorIndex];
       // ctx.arc(widtharc/2 +toMiddle, higharc-toMiddle, radius, 0, 1 * Math.PI);
       // ctx.fill();
@@ -78,6 +62,8 @@ class CreateNamePicture extends React.Component {
       // ctx.fillStyle = colorArray[SecondColorIndex];
       // ctx.arc(widtharc/2 +toMiddle, higharc-toMiddle, radius, Math.PI, 2 * Math.PI);
       // ctx.fill();
+
+      */
       ctx.beginPath();
       ctx.fillStyle = colorArray[FirstColorIndex];
       ctx.arc(widtharc/2 +toMiddle, higharc-toMiddle, radius, -Math.PI/2, 1 * Math.PI/2);
@@ -91,10 +77,18 @@ class CreateNamePicture extends React.Component {
 
       ctx.fillStyle = colorArray[ThreeColorIndex];
       ctx.font = "90px Arial";
-      ctx.fillText("א.ש", widtharc, higharc);
+      ctx.fillText(name, widtharc, higharc);
     }
     
-    return <canvas id={"myCanvas"+index} width="210" height="300" onClick={LoadCanvas} className={classes.canvas}>Your browser does not support the HTML5 canvas tag.</canvas>//<canvas id={"myCanvas"+index} width="200" height="300" onClick={LoadCanvas}></canvas>
+    return <canvas id={"myCanvas"+index} width="210" height="300" onClick={LoadCanvas} >Meimad Are Amazing</canvas>//<canvas id={"myCanvas"+index} width="200" height="300" onClick={LoadCanvas}></canvas>
+  }
+
+
+  CanvasToByteArray(index)
+  {
+    
+
+
   }
 
 
@@ -103,7 +97,7 @@ class CreateNamePicture extends React.Component {
 
     return (
       <div>
-      {this.CreateCanvas(1) }
+       {this.CreateCanvas(this.props.index,this.props.uname) }
      </div>
     );
   }

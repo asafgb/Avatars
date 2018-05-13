@@ -7,6 +7,8 @@ import IconButton from 'material-ui/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 //import tileData from './tileData';
 import testsplist from '../utilities/TestSPListOfPictures.json'
+import CreateNamePicture from '../utilities/CreateNamePicture';
+
 
 const styles = theme => ({
   root: {
@@ -44,17 +46,22 @@ const styles = theme => ({
  */
 function TitlebarGridList(props) {
   const { classes } = props;
-
+  const AmountPictureColor=20;
+  var i=0;
   return (
     <div className={classes.root} id="AllImages">
       <GridList cols={4} spacing={20}  cellHeight={360} className={classes.gridList}>
         {testsplist.map(tile => (
-          <GridListTile key={tile.path} alt={tile.category}>
-            <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} alt={tile.category} />
+          <GridListTile key={"pic"+tile.path} alt={tile.category}>
+            <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} />
           </GridListTile>
-
-          
         ))}
+         {Array(AmountPictureColor).fill(1).map((el, i) =>
+        <GridListTile  alt={"all"} key ={"col"+i}>
+          <CreateNamePicture uname="א.ש" index={i}  />
+        </GridListTile>
+        )}
+
       </GridList>
     </div>
   );
