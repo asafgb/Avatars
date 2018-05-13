@@ -14,7 +14,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ImageAvatars from '../components/Avatars_TopNavUserPic';
 import {ReactHeight} from 'react-height';
-import { mailFolderListItems, otherMailFolderListItems } from './ListCreator';
+//import { mailFolderListItems, otherMailFolderListItems } from './ListCreator';
 //import CategoriesGenerator from '../components/Avatars_CategoriesCreator.js';
 import data from '../utilities/Categories.json';
 import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
