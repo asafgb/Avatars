@@ -7,7 +7,7 @@ import IconButton from 'material-ui/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 //import tileData from './tileData';
 import testsplist from '../utilities/TestSPListOfPictures.json'
-import CreateNamePicture from './Avatars_CreateNamePicture';
+//import CreateNamePicture from './Avatars_CreateNamePicture';
 
 
 const styles = theme => ({
@@ -42,14 +42,14 @@ function TitlebarGridList(props) {
           </GridListTile>
         ))}
 
-         {/*  בצד שרת */
+         {/*  בצד שרת 
          }
           {Array(AmountPictureColor).fill(1).map((el, i) =>
         <GridListTile  alt={"all"} key ={"col"+i}>
           <CreateNamePicture uname="א.ש" index={i}  />
         </GridListTile>
         )} 
-
+      */}
       </GridList>
     </div>
   );

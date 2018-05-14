@@ -96,7 +96,7 @@ class CreateNamePicture extends React.Component {
 
       // Color he other half circle
       ctx.beginPath();
-      ctx.fillStyle = colorArray[SecondColorIndex];
+      ctx.fillStyle = colorArray[FirstColorIndex];
       ctx.arc(widtharc/2 +toMiddle, higharc-toMiddle, radius, Math.PI/2,  Math.PI+Math.PI/2);
       ctx.fill();
 
