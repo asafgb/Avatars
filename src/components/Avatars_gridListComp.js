@@ -5,6 +5,8 @@ import MyClickable from './Avatars_CostumeButton'
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
 import testsplist from '../utilities/TestSPListOfPictures.json' 
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Save from '@material-ui/icons/Save';
+import Button from '@material-ui/core/Button';
 const styles = theme => ({
   root: {
     //display: 'flex',
@@ -105,6 +107,26 @@ const styles = theme => ({
   PicSelected:{
       backgroundColor: 'red',
   },
+  buttons: {
+    margin: theme.spacing.unit,
+  },
+  leftIcon: {
+    marginRight: theme.spacing.unit,
+  },
+  rightIcon: {
+    marginLeft: theme.spacing.unit,
+  },
+  iconSmall: {
+    fontSize: 20,
+  },
+  icon:{
+    width: '36px',
+    height:'36px',
+  },
+  Bigicon:{
+    width: '72px',
+    height:'72px',
+  }
 });
 
 class GridListComp extends React.Component {
@@ -159,6 +181,27 @@ class GridListComp extends React.Component {
           
         ))}
       </GridList>
+
+         <Button className={classes.buttons} variant="raised"  style={{ backgroundColor: '#21d38f', color:'White' }}>
+        <img src={ process.env.PUBLIC_URL + '/images/images/active.svg'} className={classNames(classes.leftIcon,classes.icon)} />
+        Defualt
+      </Button>
+
+      <Button className={classes.buttons} variant="raised"  style={{ backgroundColor: 'orange', color:'White' }}>
+        <img src={ process.env.PUBLIC_URL + '/images/images/name.svg'} className={classNames(classes.leftIcon,classes.icon)} />
+        NameinColor
+      </Button>
+      
+      {/* <Button className={classes.buttons} variant="raised"  style={{ backgroundColor: 'Blue', color:'White' }}>
+        <img src={ process.env.PUBLIC_URL + '/images/images/reset.svg'} className={classNames(classes.leftIcon,classes.icon)} />
+        Reset
+      </Button> */}
+
+      <Button className={classes.buttons} variant="raised" color="primary">
+      <Save className={classNames(classes.leftIcon,classes.icon)} />
+        Save
+      </Button> 
+      
     </div>
     );
   }
