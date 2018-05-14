@@ -18,7 +18,7 @@ import data from '../utilities/Categories.json';
 import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
 import testsplist from '../utilities/TestSPListOfPictures.json'
 //import TitlebarGridList from './Avatars_GridList'
-import GridListComp from './Avatar_gridListComp'
+import GridListComp from './Avatars_gridListComp'
 
 
 const drawerWidth = 240;
@@ -176,7 +176,6 @@ class MiniDrawer extends React.Component {
           <div className={classes.toolbar} />
           {
             <GridListComp/>
-            //<ButtonBases></ButtonBases>
           }
       
         </main>
