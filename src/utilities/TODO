@@ -1,13 +1,27 @@
-Avatars_CategoriesCreator - סינון תמונות - במחלקת
-Avatars_SideNavBar - להעביר תמונה ל מערך BYTES
+Avatars_CategoriesCreator
+אחרי קיטלוג לפעמים קורה שיש תמונות שמתקווצות
+בעיית CSS
 
-Avatars_SideNavBar - להפוך הכל לכפתורים לבחירה
+
+
+
 Avatars_SideNavBar - SAVE BUTTON
+
+
+
+Done:
+Avatars_CategoriesCreator - סינון תמונות - במחלקת
+Avatars_SideNavBar - להפוך הכל לכפתורים לבחירה
+
+
+
+CreateNamePicture - עלייה עם המערכת
+זה יקרה בצד שרת בלבד
+
+
+Avatars_SideNavBar - להעביר תמונה ל מערך BYTES
+צד שרת
 
 
 Avatars_SideNavBar - לטעון תמונה נוכחית
 יקרה בתוך הרשת ע"י  כתובת Url
-
-Done:
-CreateNamePicture - עלייה עם המערכת
-זה יקרה בצד שרת בלבד

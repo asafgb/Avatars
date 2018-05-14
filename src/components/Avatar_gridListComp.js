@@ -35,15 +35,15 @@ const styles = theme => ({
     }
   },
   images:{
-   // width: '300px',
-   // height: '300px',
+    //width: '300px',
+    //height: '300px',
   },
   image: {
     position: 'relative',
-    height: 200,
+    //height: 200,
     [theme.breakpoints.down('xs')]: {
-      width: '100% !important', // Overrides inline-style
-      height: 100,
+      //width: '100% !important', // Overrides inline-style
+     // height: 100,
     },
     '&:hover, &$focusVisible': {
       zIndex: 1,
@@ -102,11 +102,14 @@ const styles = theme => ({
     left: 'calc(50% - 9px)',
     transition: theme.transitions.create('opacity'),
   },
+  PicSelected:{
+      backgroundColor: 'red',
+  },
 });
 
 class GridListComp extends React.Component {
   state = {
-    activeIndex: null
+    activeIndex: -1
   }
   
 
@@ -116,7 +119,6 @@ class GridListComp extends React.Component {
 }
 
   render() {
-    var i=0;
     const { classes } = this.props;
     return (
     <div className={classes.root} id="AllImages">
@@ -150,8 +152,8 @@ class GridListComp extends React.Component {
 
            
           //Option B
-          <GridListTile key={i} index={i} alt={tile.category} onClick={() => this.handleClick(i) } className={classes.button}  >
-            <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} className={classes.images} />
+          <GridListTile key={i} index={i} alt={tile.category} onClick={() => this.handleClick(i) } className={classNames(classes.button, this.state.activeIndex===i && classes.PicSelected)}  >
+            <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} className={classes.images}  />
           </GridListTile>
           
           
