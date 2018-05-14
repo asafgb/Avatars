@@ -19,7 +19,6 @@ import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
 import testsplist from '../utilities/TestSPListOfPictures.json'
 //import TitlebarGridList from './Avatars_GridList'
 import GridListComp from './Avatar_gridListComp'
-import ButtonBases from './Avatar_PictureButton'
 
 
 const drawerWidth = 240;
