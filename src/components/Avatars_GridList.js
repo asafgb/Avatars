@@ -24,27 +24,11 @@ const styles = theme => ({
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
-  },
+  }
 });
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 function TitlebarGridList(props) {
+  
   const { classes } = props;
   const AmountPictureColor=1;
   var i=0;
@@ -52,15 +36,19 @@ function TitlebarGridList(props) {
     <div className={classes.root} id="AllImages">
       <GridList cols={4} spacing={20}  cellHeight={360} className={classes.gridList}>
         {testsplist.map(tile => (
-          <GridListTile key={"pic"+tile.path} alt={tile.category}>
+          <GridListTile key={i} alt={tile.category}>
             <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} />
+            {i++}
           </GridListTile>
         ))}
-         {Array(AmountPictureColor).fill(1).map((el, i) =>
+
+         {/*  בצד שרת */
+         }
+          {Array(AmountPictureColor).fill(1).map((el, i) =>
         <GridListTile  alt={"all"} key ={"col"+i}>
           <CreateNamePicture uname="א.ש" index={i}  />
         </GridListTile>
-        )}
+        )} 
 
       </GridList>
     </div>

@@ -1,6 +1,13 @@
 Avatars_CategoriesCreator - סינון תמונות - במחלקת
-CreateNamePicture - עלייה עם המערכת
 Avatars_SideNavBar - להעביר תמונה ל מערך BYTES
-Avatars_SideNavBar - לטעון תמונה נוכחית
+
 Avatars_SideNavBar - להפוך הכל לכפתורים לבחירה
 Avatars_SideNavBar - SAVE BUTTON
+
+
+Avatars_SideNavBar - לטעון תמונה נוכחית
+יקרה בתוך הרשת ע"י  כתובת Url
+
+Done:
+CreateNamePicture - עלייה עם המערכת
+זה יקרה בצד שרת בלבד

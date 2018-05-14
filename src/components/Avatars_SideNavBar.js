@@ -20,6 +20,7 @@ import data from '../utilities/Categories.json';
 import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
 import testsplist from '../utilities/TestSPListOfPictures.json'
 import TitlebarGridList from './Avatars_GridList'
+import GridListComp from './Avatar_gridListComp'
 //import CreateNamePicture from './CreateNamePicture';
 
 const drawerWidth = 240;
@@ -104,11 +105,6 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 4,
   },
-  pictureGrid:
-{
-
-},
-
 });
 
 
@@ -139,8 +135,8 @@ class MiniDrawer extends React.Component {
         >
        
           <Toolbar  disableGutters={true}  > 
-{//disableGutters={!this.state.open}
-}
+        {//disableGutters={!this.state.open}
+        }
           
             <IconButton 
               color="inherit"
@@ -187,7 +183,8 @@ class MiniDrawer extends React.Component {
           <div className={classes.toolbar} />
           {
             // Picture + name picture list
-            <TitlebarGridList piccolor={5}/> 
+             //<TitlebarGridList /> 
+            <GridListComp/>
           }
       
         </main>
