@@ -7,7 +7,7 @@ import testsplist from '../utilities/TestSPListOfPictures.json'
 import ButtonBase from '@material-ui/core/ButtonBase';
 const styles = theme => ({
   root: {
-    display: 'flex',
+    //display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
@@ -16,8 +16,6 @@ const styles = theme => ({
   gridList: {
     width: '100%',
     height: '100%',
-    
-    
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
@@ -35,6 +33,10 @@ const styles = theme => ({
         backgroundColor: 'transparent'
       }
     }
+  },
+  images:{
+   // width: '300px',
+   // height: '300px',
   },
   image: {
     position: 'relative',
@@ -149,7 +151,7 @@ class GridListComp extends React.Component {
            
           //Option B
           <GridListTile key={i} index={i} alt={tile.category} onClick={() => this.handleClick(i) } className={classes.button}  >
-            <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} />
+            <img src={tile.path.includes("http") ? tile.path : process.env.PUBLIC_URL + tile.path} className={classes.images} />
           </GridListTile>
           
           

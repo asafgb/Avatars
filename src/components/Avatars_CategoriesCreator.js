@@ -42,16 +42,28 @@ class CategoriesCreator extends React.Component {
   // };
 
 
-  CategoryClick(prop) {
+  CategoryClick(category) {
     //console.log('Filter Category: '+ prop);
     var x,i;
-   /* x = document.getElementById("AllImages").getElementsByTagName("li");
-    if (prop == "all") prop = "";
+    x = document.getElementById("AllImages").getElementsByTagName("li");
+    if (category == "All") category = "";
     for (i = 0; i < x.length; i++) {
-      this.w3RemoveClass(x[i]);
-      if (x[i].getAttribute("alt").indexOf(prop) > -1) this.w3AddClass(x[i]);
-    }*/
+      this.RemoveFromList(x[i]);
+      if (x[i].getAttribute("alt").indexOf(category) > -1) this.ViewItem(x[i]);
+    }
   }
+
+  RemoveFromList(element) {
+    element.style.display='none'
+    element.style.visibility='false'
+  }
+
+  ViewItem(element) {
+    element.style.display=''
+    element.style.visibility=''
+  }
+
+
 
 
   //  filterSelection(c) {
