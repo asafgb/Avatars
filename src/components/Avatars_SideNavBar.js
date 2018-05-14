@@ -14,14 +14,12 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ImageAvatars from '../components/Avatars_TopNavUserPic';
 import {ReactHeight} from 'react-height';
-//import { mailFolderListItems, otherMailFolderListItems } from './ListCreator';
-//import CategoriesGenerator from '../components/Avatars_CategoriesCreator.js';
 import data from '../utilities/Categories.json';
 import CategoriesGenerator from '../components/Avatars_CategoriesCreator'
 import testsplist from '../utilities/TestSPListOfPictures.json'
 import TitlebarGridList from './Avatars_GridList'
 import GridListComp from './Avatar_gridListComp'
-//import CreateNamePicture from './CreateNamePicture';
+
 
 const drawerWidth = 240;
 const clientheight = this.height;
@@ -135,8 +133,6 @@ class MiniDrawer extends React.Component {
         >
        
           <Toolbar  disableGutters={true}  > 
-        {//disableGutters={!this.state.open}
-        }
           
             <IconButton 
               color="inherit"
@@ -144,9 +140,7 @@ class MiniDrawer extends React.Component {
               onClick={this.handleDrawerOpen}
               className={classNames(classes.menuButton, this.state.open && classes.hide)}
             >
-            {/* <ReactHeight onHeightReady={height =>console.log(height)}> */}
               <MenuIcon   />
-              {/* </ReactHeight> */}
             </IconButton>
 
             <Typography variant="title" color="inherit" className={classes.flex}>
@@ -172,7 +166,6 @@ class MiniDrawer extends React.Component {
           </div>
           <Divider  />
             {
-              // Category Generetor from json
               <CategoriesGenerator data={data} />
             }
            
@@ -182,8 +175,6 @@ class MiniDrawer extends React.Component {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           {
-            // Picture + name picture list
-             //<TitlebarGridList /> 
             <GridListComp/>
           }
       

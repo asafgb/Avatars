@@ -17,7 +17,8 @@ class MyClickable extends React.Component {
       }
       onClick={ this.handleClick }
     >
-      <span>{ this.props.name }</span>
+      {/* <span>{ this.props.name }</span> */}
+      {this.props.value}
     </button>
   }
 }
